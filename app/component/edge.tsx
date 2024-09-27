@@ -42,7 +42,7 @@ export function Edge({ registers }: { registers: Register[] }) {
     return acc
   }, [] as data[])
 
-  const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, percent }: any) => {
+  const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent }: any) => {
     const RADIAN = Math.PI / 180
     const radius = outerRadius * 0.8
     const x = cx + radius * Math.cos(-midAngle * RADIAN)
