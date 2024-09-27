@@ -1,0 +1,112 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "¿Qué efecto tendrá la Inteligencia artificial en tu vida?",
+      "options": [
+        {
+          "value": "1",
+          "text": "Muy positivo"
+        },
+        {
+          "value": "2",
+          "text": "Positivo"
+        },
+        {
+          "value": "3",
+          "text": "Sin ningún efecto"
+        },
+        {
+          "value": "4",
+          "text": "Negativo"
+        },
+        {
+          "value": "5",
+          "text": "Muy negativo"
+        },
+        {
+          "value": "6",
+          "text": "No sé"
+        },
+        {
+          "value": "7",
+          "text": "Prefiero no contestar"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": "¿Utilizas la Inteligencia artificial para realizar tareas/trabajos?",
+      "options": [
+        {
+          "value": "1",
+          "text": "Sí"
+        },
+        {
+          "value": "2",
+          "text": "No, pero planeo hacerlo"
+        },
+        {
+          "value": "3",
+          "text": "No y no planeo hacerlo"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": "¿Cómo afectará a los empleos?",
+      "options": [
+        {
+          "value": "1",
+          "text": "Creará más empleos"
+        },
+        {
+          "value": "2",
+          "text": "No tendrá impacto en los empleos"
+        },
+        {
+          "value": "3",
+          "text": "Reducirá los empleos"
+        },
+        {
+          "value": "4",
+          "text": "No sé"
+        },
+        {
+          "value": "5",
+          "text": "Prefiero no contestar"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": "¿Cómo afectará a la seguridad social?",
+      "options": [
+        {
+          "value": "1",
+          "text": "Aumentará la seguridad"
+        },
+        {
+          "value": "2",
+          "text": "No tendrá impacto en la seguridad"
+        },
+        {
+          "value": "3",
+          "text": "Disminuirá levemente la seguridad"
+        },
+        {
+          "value": "4",
+          "text": "Disminuirá gravemente la seguridad"
+        },
+        {
+          "value": "5",
+          "text": "No sé"
+        },
+        {
+          "value": "6",
+          "text": "Prefiero no contestar"
+        }
+      ]
+    }
+  ]
+}

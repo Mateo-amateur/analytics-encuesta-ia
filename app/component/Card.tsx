@@ -5,7 +5,7 @@ interface CardProps {
 
 export function Card({ children, className = '' }: CardProps) {
   return (
-    <div className={`bg-white dark:bg-gray-800 shadow-lg rounded-lg overflow-hidden ${className}`}>
+    <div style={{ height: "560px" }} className={`flex flex-col items-center justify-center bg-gray-800 shadow-lg rounded-lg ${className} md:w-[400px]`}>
       {children}
     </div>
   )
