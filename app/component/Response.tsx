@@ -1,16 +1,13 @@
 "use client"
 
-import { Register } from "../types"
+import { Question, Register } from "../types"
 import { Card } from "./Card"
 import { CardContent } from "./CardContent"
 import { CardHeader } from "./CardHeader";
 import { CardTitle } from "./CardTitle"
-import { questions } from "../questions.json"
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
-import users from "../mocks/users.json"
 
-export default function Response({ registers, index }: { registers: Register[], index: number }) {
-  registers = users
+export default function Response({ registers, index, questions }: { registers: Register[], index: number, questions: Question[] }) {
   type dataItem = {
     name: string
     respuestas: number
