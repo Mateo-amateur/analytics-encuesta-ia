@@ -42,6 +42,7 @@ export function Edge({ registers }: { registers: Register[] }) {
     return acc
   }, [] as data[])
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const renderCustomizedLabel = ({ cx, cy, midAngle, outerRadius, percent }: any) => {
     const RADIAN = Math.PI / 180
     const radius = outerRadius * 0.8
