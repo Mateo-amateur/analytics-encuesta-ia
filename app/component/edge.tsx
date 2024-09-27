@@ -63,7 +63,7 @@ export function Edge({ registers }: { registers: Register[] }) {
   }
 
   return (
-    <Card className="w-full bg-gray-800 text-white">
+    <Card className="w-full max-w-96 bg-gray-800 text-white">
       <CardHeader>
         <CardTitle>Edge Distribution</CardTitle>
       </CardHeader>
