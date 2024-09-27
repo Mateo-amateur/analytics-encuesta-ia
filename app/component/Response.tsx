@@ -1,13 +1,14 @@
 "use client"
 
-import { Question, Register } from "../types"
+import { Register } from "../types"
 import { Card } from "./Card"
 import { CardContent } from "./CardContent"
 import { CardHeader } from "./CardHeader";
 import { CardTitle } from "./CardTitle"
 import { Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import questions from "../questions.json"
 
-export default function Response({ registers, index, questions }: { registers: Register[], index: number, questions: Question[] }) {
+export default function Response({ registers, index }: { registers: Register[], index: number }) {
   type dataItem = {
     name: string
     respuestas: number
@@ -36,7 +37,7 @@ export default function Response({ registers, index, questions }: { registers: R
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{questions[index]?.question}</CardTitle>
+        <CardTitle>{questions.questions[index]?.question}</CardTitle>
       </CardHeader>
       <CardContent>
         <ResponsiveContainer width="100%" height={400}>

@@ -8,14 +8,3 @@ export interface Register {
   userlastname: string
   username:     string
 }
-
-type Option = {
-  value: string
-  text: string
-}
-
-type Question = {
-  id: number
-  question: string
-  options: Option[]
-}
