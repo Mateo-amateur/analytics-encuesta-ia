@@ -23,7 +23,7 @@ export default async function Details({ params }: { params: { id: string } }) {
 
           const quantity = data.find(r => r.name === o.value)
           const porcentaje = typeof quantity?.name === "string"
-            ? Number(quantity?.name) / total * 100
+            ? Number(quantity?.respuestas) / total * 100
             : 0
           return (
             <li className="flex justify-between items-center p-2 border-2 border-blue-200 rounded-3xl" key={o.value} >
