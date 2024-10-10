@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Edge } from "./component/edge";
 import Response from "./component/Response";
 import { getResults } from "./services/getResult";
@@ -13,10 +14,18 @@ export default async function Home() {
       </header>
       <main className="w-full grid grid-cols-[repeat(auto-fit,minmax(300px,1fr))] gap-8 row-start-2 items-center sm:items-start">
         <Edge registers={registers} />
-        <Response registers={registers} index={0} />
-        <Response registers={registers} index={1} />
-        <Response registers={registers} index={2} />
-        <Response registers={registers} index={3} />
+        <Link className="question hover:opacity-65" href={`/${0}`}>
+          <Response registers={registers} index={0} />
+        </Link>
+        <Link className="question hover:opacity-65" href={`/${1}`}>
+          <Response registers={registers} index={1} />
+        </Link>
+        <Link className="question hover:opacity-65" href={`/${2}`}>
+          <Response registers={registers} index={2} />
+        </Link>
+        <Link className="question hover:opacity-65" href={`/${3}`}>
+          <Response registers={registers} index={3} />
+        </Link>
       </main>
     </div>
   );
