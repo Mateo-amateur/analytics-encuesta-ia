@@ -13,7 +13,7 @@ export default async function Details({ params }: { params: { id: string } }) {
   }
   return (
     <div className="relative grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)] bg-[#283c50]">
-      <Link href="/" className="absolute bottom-14 right-14">
+      <Link href="/" style={{ top: "calc(100dvh - 56px)" }} className="fixed right-14">
         <BackArrowIcon />
       </Link>
 
@@ -27,7 +27,7 @@ export default async function Details({ params }: { params: { id: string } }) {
             : 0
           return (
             <li className="flex justify-between items-center p-2 border-2 border-blue-200 rounded-3xl" key={o.value} >
-              <div style={{ width: `${porcentaje}%` }} className="block bg-blue-500 text-blue-100 rounded-2xl p-3">
+              <div style={{ width: `${porcentaje}%`, backgroundColor: porcentaje ? "" : "transparent" }} className="bg-blue-500 text-blue-100 rounded-2xl p-3">
                 {o.text}
               </div>
               {porcentaje}%
