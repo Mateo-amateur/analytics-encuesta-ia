@@ -8,7 +8,7 @@ export default async function Details({ params }: { params: { id: string } }) {
   const question = questions.questions.find(q => q.id === Number(id) + 1)
   const data = await getResultByQuestion(Number(id))
   let total = 0
-  for (let r of data) {
+  for (const r of data) {
     total += r.respuestas
   }
   return (
